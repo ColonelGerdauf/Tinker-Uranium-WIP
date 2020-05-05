@@ -24,6 +24,5 @@ public class Strong extends AbstractTrait {
 		
 		// start with +5 damage and +15 mining speed from TiCon
     		// add -1 damage score and -3 mining speed score per 10% delta of durability
-		}
 	}
 }
