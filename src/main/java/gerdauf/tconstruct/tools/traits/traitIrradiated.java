@@ -1,4 +1,4 @@
-package landmaster.plustic.traits;
+package gerdauf.tconstruct.tools.traits;
 
 import net.minecraft.entity.*;
 import net.minecraft.init.*;
