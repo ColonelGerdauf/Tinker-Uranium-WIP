@@ -8,7 +8,7 @@ import slimeknights.tconstruct.library.traits.*;
 import slimeknights.tconstruct.library.utils.ToolHelper;
 
 // apply to uranium sets or pieces
-public class Strong extends AbstractTrait {
+public class Hefty extends AbstractTrait {
 	public static final Hefty hefty = new Hefty();
 	
 	public Hefty() {
