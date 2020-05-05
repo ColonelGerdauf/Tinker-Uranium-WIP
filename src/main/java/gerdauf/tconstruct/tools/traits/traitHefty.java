@@ -9,9 +9,9 @@ import slimeknights.tconstruct.library.utils.ToolHelper;
 
 // apply to uranium sets or pieces
 public class Strong extends AbstractTrait {
-	public static final Strong strong = new Strong();
+	public static final Hefty hefty = new Hefty();
 	
-	public Strong() {
+	public Hefty() {
 		super("strong", 0xBFFF3F);
 	}
 	
