@@ -29,15 +29,15 @@ public class Irradiation extends AbstractTrait {
 
 		// state below 50% total durability, where the uranium initiates a unstable nuclear chain reaction
 		if (DurabilityRemaining < 0.5f && DurabilityRemaining >= 0.25f) {
-			supercritical();
+			supercritical(tool);
 		}
 		// state below 25% total of durability, where the uranium initiates a stable nuclear chain reaction
 		else if (DurabilityRemaining < 0.25f) {
-			supercritical_ii();
+			supercritical_ii(tool);
 		}
 	}
   
-	public void supercritical() {
+	public void supercritical(ItemStack tool) {
 		// inflict the equivalent of Poison I to the wearers of the armor
 		if (effectcounter1 >= 25) {
 			//super.onPlayerHurt(1);
@@ -55,7 +55,7 @@ public class Irradiation extends AbstractTrait {
 		else
 			dmgCounter++;
 	}
-	public void supercritical_ii() {  
+	public void supercritical_ii(ItemStack tool) {  
 		// inflict the equivalent of Wither II to the wearers of the armor
 		// inflict the equivalent of Poison I to people within 5 blocks of proximity to the wearers of the armor for 2s
 		// inflict the equivalent of Poison II to people within 2 blocks of proximity to the wearers of the armor for 5s
